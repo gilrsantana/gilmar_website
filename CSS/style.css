@@ -103,6 +103,7 @@ header h1{
     border-radius: 5px;
     text-align: center;
     border: none;
+    font-size: 1.2em;
 }
 
 .send{
@@ -130,8 +131,8 @@ box-shadow: 0 0 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
 /************************** Principal Formats ************************/
 /*********************************************************************/
 #principal{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     color: #545F6C;
     background-color: #eee;
     max-width: 800px;
@@ -191,7 +192,6 @@ box-shadow: 0 0 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
@@ -267,27 +267,18 @@ box-shadow: 0 0 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
     margin: 0;
 }
 
-/*********************************************************************/
-/**************************** Inform Formats *************************/
-/*********************************************************************/
-#inform{
-    background-color: #06EEF5;
-    max-width: 800px;
-    margin: 50px auto;
+.voltar {
+    text-decoration: none;
+    text-align: center;
+    background-color: #5202e8;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+    display: block;
+    width: 120px;
+    margin: auto;
 }
-
-.card-technology{
-    width: 370px;
-    margin: 15px;
-    float: left;
-    background-color: #FFFFFF;
-    border: 15px solid #CCCC;
-    border-radius: 10px;
-}
-
-
-
-
 /*********************************************************************/
 /**************************** Footer Formats *************************/
 /*********************************************************************/
