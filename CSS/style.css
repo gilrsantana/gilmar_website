@@ -25,12 +25,11 @@ p {
 /*********************************************************************/
 
 #container-topo, #container-footer{
-    max-width: 800px;
+    max-width: 1080px;
     margin: auto;
 }
 #topo{
     width: 100%;
-    
     background-image: linear-gradient(114deg, #5202e8, #7300d1);
     color: #FFFFFF;
 }
@@ -59,13 +58,24 @@ header h1{
     font-size: 1.2em;
 }
 
-#menu-topo a:hover{
+#menu-topo a:hover,
+body#home #menu-topo a#home,
+body#servicos #menu-topo a#servicos,
+body#perfil #menu-topo a#perfil,
+body#contato #menu-topo a#contato{
     color: #5202e8;
     font-weight: 900;
     font-size: 1em;
     background-color: #FFFFFF;
     border-radius: 5px;
     padding: 10px 20px;
+}
+
+body#home #menu-topo a#home,
+body#servicos #menu-topo a#servicos,
+body#perfil #menu-topo a#perfil,
+body#contato #menu-topo a#contato{
+    cursor: text;
 }
 
 #logo{
@@ -121,7 +131,7 @@ box-shadow: 0 0 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
 #marketing-topo-img{
     width: 45%;
     float: right;
-    margin: 110px auto 20px auto;
+    margin: 70px auto 20px auto;
     background-color: #FFFFFF;
     opacity: 0.8;
     padding: 10px;
@@ -131,153 +141,70 @@ box-shadow: 0 0 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
 /************************** Principal Formats ************************/
 /*********************************************************************/
 #principal{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    color: #545F6C;
-    background-color: #eee;
-    max-width: 800px;
-    margin: 50px auto;
-}
-
-#principal h2 {
-    text-align: center;
-    font-size: 2em;
-    margin: 10px 20px 50px 20px;
-}
-
-.text-section {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 30px;
-}
-
-.text-section h3 {
-    font-size: 1.6em;
-    text-align: center;
-    margin: 30px 0;
-}
-
-.text-section p {
-    text-indent: 35px;
-    line-height: 2.5em;
-    font-size: 1.1em;
-    text-align: justify;
-    letter-spacing: 1px;
-    margin-bottom: 2.5em;
-}
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 600px;
-  position: relative;
+  width: 75%;
   margin: auto;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 18px;
-  left: 2.5%;
-  width: 95%;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.2); 
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-.mySlides img {
-    border: 15px solid #CCCC;
-    margin: 0;
-}
-
-.voltar {
-    text-decoration: none;
-    text-align: center;
-    background-color: #5202e8;
-    padding: 15px 30px;
+.item-principal {
+    width: 100%;
+    min-width: 480px;
+    height: 400px;
+    margin: 100px auto;
     border-radius: 5px;
-    color: white;
+}
+
+.item-principal:hover {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+}
+
+.item1 {
+    background-image: url("../Images/web17.jpg") ;
+    background-size: cover;
+}
+.item2 {
+    background-image: url("../Images/web16.jpg");
+    background-size: cover;
+}
+.item3 {
+    background-image: url("../Images/web14.jpg");
+    background-size: cover;
+}
+
+.principal-text {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    width: 420px;
+    color: #FFFFFF;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.principal-text h3 {
+    margin: 20px;
+    margin-left: 0;
+    font-size: 3em;
+}
+
+.principal-text p {
+    line-height: 28px;
+}
+
+.principal-text a {
+    color:#E8DC02;
+    text-decoration: none;
+    
+}
+.principal-text a:hover {
+    color: #FFFFFF;
     font-weight: 900;
-    display: block;
-    width: 120px;
-    margin: auto;
+    padding: 10px 20px;
+    background-color: #E8DC02;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
 }
 /*********************************************************************/
 /**************************** Footer Formats *************************/
@@ -285,7 +212,6 @@ box-shadow: 0 0 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
 footer{
     background-color: #545F6C;
     color: #06EEF5;
-    
     padding: 20px;
 }
 
@@ -325,6 +251,132 @@ footer{
 
 .fab {
     font-size: 2em;
+}
+
+/*********************************************************************/
+/**************************** Media Queries **************************/
+/*********************************************************************/
+
+@media screen and (max-width: 1024px){
+    body {
+        font-size: 1em;
+    }
+    #container-topo, #container-footer{
+        width: 80%;
+        margin: auto;
+    }
+
+    #menu-topo ul{
+        margin: 10px;
+    }
+    #menu-topo a:hover,
+    body#home #menu-topo a#home,
+    body#servicos #menu-topo a#servicos,
+    body#perfil #menu-topo a#perfil,
+    body#contato #menu-topo a#contato{
+        padding: 5px 5px;
+    }
+
+    #marketing-topo{
+        display: inline-block;
+        width: 90%;
+        padding: 5%;
+    }
+    #marketing-topo input{
+        width: 100%;
+        font-size: 1em;
+    }
+
+    #marketing-topo-img{
+        display:none;
+    }
+
+    #principal {
+       margin: 10px auto;
+       width: 80%;
+    }
+
+    .item-principal {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .principal-text {
+        width: 60%;
+
+    }
+    
+}
+
+@media screen and (max-width: 720px){
+    body {
+        font-size: 0.8em;
+    }
+    #container-topo, #container-footer{
+        width: 90%;
+       
+    }
+    #logo{
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    #menu-topo ul{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+
+    #menu-topo li{
+        float: left;
+        padding: 10px;
+        padding-left: 20px;
+        width: 15%;
+    }
+    #principal {
+       width: 90%;
+    }
+
+    .item-principal {
+        position: static;
+        width: 100%;
+        min-width: 100%;
+        height: 400px;
+        margin: 30px auto;
+    }
+
+    .principal-text {
+        width: 80%;
+        left: 5%;
+        font-size: 0.8em;
+    }
+    
+}
+
+@media screen and (max-width: 420px){
+   
+    #menu-topo ul{
+        width: 100%;
+    }
+
+    #menu-topo li{
+        padding-left: 10px;
+    }
+
+    #principal {
+       margin: 10px auto;
+       width: 300px;
+    }
+
+    .item-principal {
+        height: 300px;
+    }
+
+    .principal-text {
+        width: 80%;
+        left: 5%;
+    }
+    
 }
 
 /*********************************************************************/
