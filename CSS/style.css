@@ -233,6 +233,7 @@ main {
     float: right;
     width: 70%; 
     margin-right: 3%;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #perfil h1 {
