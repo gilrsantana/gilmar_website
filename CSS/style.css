@@ -140,10 +140,12 @@ box-shadow: 0 0 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
 /*********************************************************************/
 /************************** Principal Formats ************************/
 /*********************************************************************/
-#principal{
-  width: 75%;
-  margin: auto;
+
+main {
+    width: 75%;
+    margin: auto;
 }
+
 
 .item-principal {
     width: 100%;
@@ -214,6 +216,45 @@ box-shadow: 0 0 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
     bottom: 10px;
     right: 10px;
 }
+
+#perfil p {
+    margin-bottom: 20px;
+}
+
+#perfil .item-principal {
+    width: 100%;
+    min-width: 480px;
+    height: 400px;
+    margin: 100px auto;
+    border-radius: 5px;
+}
+
+#perfil .principal-text {
+    float: right;
+    width: 70%; 
+    margin-right: 3%;
+}
+
+#perfil h1 {
+    margin-bottom: 20px;
+}
+
+#perfil .item1 {
+    background-image: url("../Images/optical_fiber3.jpg");
+}
+
+#perfil .photo{
+    display: inline-block;
+    width: 20%;
+    margin-top: 10%;
+    margin-left: 3%;
+}
+
+#perfil img{
+    border-radius: 5px;
+    width: 100%;
+}
+
 /*********************************************************************/
 /**************************** Footer Formats *************************/
 /*********************************************************************/
@@ -264,6 +305,12 @@ footer{
 /*********************************************************************/
 /**************************** Media Queries **************************/
 /*********************************************************************/
+@media screen and (max-width: 1199px){
+    #perfil .item-principal {
+        height: 550px;
+    }
+}
+
 
 @media screen and (max-width: 1024px){
     body {
@@ -357,6 +404,12 @@ footer{
         width: 80%;
         left: 5%;
         font-size: 0.8em;
+    }
+
+    #perfil .principal-text {
+        float: right;
+        width: 60%; 
+        margin-right: 10%;
     }
     
 }
