@@ -311,6 +311,11 @@ main {
     min-width: 100px;
 }
 
+#contato .fa-whatsapp-square.fab,
+#perfil .fa-whatsapp-square.fab {
+    top: 95px;
+}
+
 /*********************************************************************/
 /**************************** Footer Formats *************************/
 /*********************************************************************/
@@ -489,6 +494,14 @@ footer{
         display: none;
     }
 
+    #contato .fa-whatsapp-square.fab {
+        top: 125px;
+    }
+
+    #perfil .fa-whatsapp-square.fab {
+        top: 149px;
+        right: 30px;
+    }
 }
 
 @media screen and (max-width: 480px){
