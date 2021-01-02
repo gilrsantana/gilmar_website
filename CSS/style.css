@@ -222,17 +222,15 @@ main {
 }
 
 #perfil .item-principal {
-    width: 100%;
-    min-width: 480px;
-    height: 400px;
-    margin: 100px auto;
-    border-radius: 5px;
+
+    min-width: none;
+
 }
 
 #perfil .principal-text {
     float: right;
     width: 70%; 
-    margin-right: 3%;
+    margin-right: 30px;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -362,6 +360,9 @@ footer{
 
     }
     
+    #perfil .photo{
+        margin-left: 5px;
+    }
 }
 
 @media screen and (max-width: 720px){
@@ -409,10 +410,14 @@ footer{
 
     #perfil .principal-text {
         float: right;
-        width: 60%; 
+        width: 85%; 
+        min-width: 10px;
         margin-right: 10%;
     }
-    
+
+    #perfil .photo{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 420px){
@@ -438,6 +443,8 @@ footer{
         width: 80%;
         left: 5%;
     }
+
+    
     
 }
 
