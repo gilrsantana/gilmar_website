@@ -35,15 +35,13 @@
 <body>
   <header class="banner">
     
-      <video class="video-bg" autoplay loop muted>
-        <source src="./Assets/Surf.mp4" type="video/mp4">
-      </video>
-    
-    
     <nav class="principal-nav">
-      
       <img class="banner-logo" src="/Images/logo_transparent_5.png" alt="Gilmar Santana Logo">
-      <ul class="principal-nav-list">
+
+      <ul class="principal-nav-list" id="principal-nav-list">
+        
+         
+        
         <li class="principal-nav-item">
 
           <a class="link-principal-nav" href="">Home</a>
@@ -67,22 +65,48 @@
       </ul>
     </nav>
 
+    <div class="menuBtn" id="menuBtn">
+      <img src="./Images/menu.png" alt="" id="menu" />
+    </div>
+
+    <div class="video-banner">
+      <video class="video-bg" autoplay loop muted>
+        <source src="./Assets/Surf.mp4" type="video/mp4">
+      </video>
+    </div>
+
     <div class="content-header">
       <h1 class="title-header">
         Tenha seu Site
+        <div class="teste">
+          <div class="slider">
+            <div>HOJE</div>
+            <div>AGORA</div>
+            <div>JÁ</div>
+          </div>
+        </div>
+      </h1>
+      
+        
+      
+
+
+
+      <!-- <h1 class="title-header">
+        <span class="quebra">Tenha seu Site</span>
         <div class="slider">
           <div>HOJE</div>
           <div>AGORA</div>
           <div>JÁ</div>
         </div>
-      </h1>
+      </h1> -->
       <div class="text-header">
         <p>
           Ter um Site nunca foi tão importante como agora. <br>Milhões de pessoas <span class="destack-banner">compram</span>, <span class="destack-banner">pesquisam</span> e se <span class="destack-banner">conectam</span> pela internet. <br>Não perca essa onda.
         </p>
         <button type="button">Clique aqui e saiba mais</button>
       </div>
-    </div>
+    </div> <!-- /content-header -->
 
   </header>
     
@@ -114,6 +138,24 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
+
+    <script>
+      var menuBtn = document.getElementById("menuBtn");
+        var menu = document.getElementById("menu");
+        var principalNav = document.getElementById("principal-nav-list");
+
+        principalNav.style.right = "-250px";
+
+        menuBtn.onclick = function () {
+            if (principalNav.style.right == "-250px") {
+              principalNav.style.right = "0";
+                menu.src = "./Images/close.png";
+            } else {
+              principalNav.style.right = "-250px";
+                menu.src = "./Images/menu.png";
+            }
+        };
+    </script>
 </body>
 
 </html>
