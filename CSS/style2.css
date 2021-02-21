@@ -38,21 +38,21 @@ body {
     width: 100%;
     max-width: 1520px;
     min-width: 320px;
-    height: 800px;
+    height: 100vh;
     margin: 0 auto;
     position: relative;
-    background-image: linear-gradient(rgba(0,0,0,9), rgba(0,0,0,0.7));
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7));
     background-position: center;
     background-size: cover;
 }
 
 .video-bg {
-    height: 800px;   
+    height: 100vh;   
 }
 
 .video-banner {
     width: 100%;
-    height: 800px;
+    height: 100vh;
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -78,12 +78,33 @@ body {
     cursor: pointer; 
 }
 
+@media screen and (max-width: 576px){
+    .banner-logo {
+        width: 65%; 
+    }
+}
+
 .principal-nav-list {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
     margin: 0;
+}
+
+@media screen and (max-width: 768px){
+    .principal-nav-list {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--pri1);
+        justify-content: space-around;
+        align-items: start;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 130px;
+    }
 }
 
 .principal-nav-item {
@@ -104,6 +125,12 @@ body {
     background-color: var(--sec1);
 }
 
+@media screen and (max-width: 768px){
+    .principal-nav-item:hover::after {
+        background-color: #fff;
+    }
+}
+
 .link-principal-nav {
     text-decoration: none;
     color: #fff;   
@@ -119,12 +146,17 @@ body {
     width: 100%;
     height: 720px;
     margin: 0 auto;
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+@media screen and (max-width: 768px){
+    .content-header {
+        padding-top: 50px;
+    }
 }
 
 .title-header {
@@ -136,13 +168,36 @@ body {
     display: flex;
 }
 
+@media screen and (max-width: 768px){
+    .title-header {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .title-header {
+        font-size: 40px;
+        margin-top: -200px;
+        margin-bottom: 80px;
+    }
+}
 
 .text-header p{
     margin: 20px 0;
+    padding: 0 10px;
     text-align: center;
     font-size: 18px;
     line-height: 32px;
     letter-spacing: 1px;
+}
+
+@media screen and (max-width: 576px){
+    .text-header p{
+        margin-top: 0;
+        padding: 0 10px;
+        font-size: 16px;
+        line-height: 28px;
+    }
 }
 
 .text-header button {
@@ -174,6 +229,12 @@ body {
     text-align: left;
 }
 
+@media screen and (max-width: 768px){
+    .slider {
+        text-align: center;
+    }
+}
+
 .destack-banner {
     font-weight: 900;
     color: var(--sec1);
@@ -192,6 +253,18 @@ body {
     overflow: hidden;
 }
 
+@media screen and (max-width: 768px){
+    .teste {
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .teste {
+        font-size: 40px;
+        margin-top: -30px;
+    }
+}
 
 @keyframes slider {
     0% { margin-top: -400px;}
@@ -217,56 +290,64 @@ body {
     display: none;
 }
 
-.menuBtn img {
-    width: 20px;
-    margin-top: 15px;
-}
-
 @media screen and (max-width: 768px){
-    .title-header {
-        display: block;
-    }
-
-    .teste {
-        margin-top: -20px;
-    }
-
-    .slider {
-        text-align: center;
-    }
-
     .menuBtn {
         display: block;
     }
-
-    .principal-nav-list {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--pri1);
-        justify-content: space-around;
-        align-items: start;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -250px;
-        width: 130px;
-    }
-    
-    .principal-nav-item:hover::after {
-        width: 100%;
-        background-color: #fff;
-    }
 }
+
 @media screen and (max-width: 576px){
     .menuBtn {
         width: 40px;
         height: 40px;
         right: 10px;
     }
-    .banner-logo {
-        width: 65%; 
-    }
+}
+
+.menuBtn img {
+    width: 20px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 576px){
     .menuBtn img {
         margin-top: 10px;
+    }
+}
+
+section {
+    text-align: justify;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px){
+    
+
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+}
+
+@media screen and (max-width: 576px){
+    
+    
+    
+
+    
+    
+
+    .text-header p{
+        margin-top: 0;
+        padding: 0 10px;
+        font-size: 16px;
+        line-height: 28px;
     }
 }
