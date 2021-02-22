@@ -47,7 +47,7 @@ body {
 .container {
     width: 90%;
     max-width: 1520px;
-    min-width: 320px;
+    min-width: 280px;
     height: 90vh;
     margin: 0 auto;
     padding-top: 120px;
@@ -348,8 +348,8 @@ body {
 /* ******************************************* */
 /* ***************** Services **************** */
 /* ******************************************* */
-.services {
-    background: #fef8eb;
+.portfolio {
+    
 }
 
 .gallery {
@@ -388,4 +388,50 @@ body {
 
 .box-image:nth-child(1):hover {
     flex-basis: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding-top: 50px;
+    }
+
+    .portfolio {
+        background: gray;
+    }
+    
+    .gallery {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .box-image {
+        margin-bottom: 15px;
+        flex-grow: 0;
+        flex-basis: 45%;
+    }
+    
+    .box-image img {
+        width: 100%;
+        height: 100%;
+        
+        object-fit: cover;
+        
+    }
+    
+    .gallery:hover .active-img {
+        flex-basis: 45%;
+    }
+    
+    .box-image:nth-child(1):hover {
+        flex-basis: 45%;
+    }
+    
+    
+    
+    
+    
+    
 }
