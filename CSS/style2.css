@@ -45,10 +45,10 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 1520px;
     min-width: 320px;
-    height: 100vh;
+    height: 90vh;
     margin: 0 auto;
     padding-top: 120px;
 }
@@ -350,99 +350,42 @@ body {
 /* ******************************************* */
 .services {
     background: #fef8eb;
-    
 }
 
-.box {
-    font-family: 'Newsreader', serif;
+.gallery {
+    width: 100%;
+    height: 80%;
+    margin: 10px auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
-
-.title-section {
-    color: var(--pri2);
-    font-family: 'Newsreader', serif;
+.box-image {
+    margin: 0 3px;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: 0.5s;
 }
 
-.text-content {
-    line-height: 32px;
-}
-
-.content-section {
-    flex-basis: 35%;
-    text-align: justify;
-    color: var(--ter1);
-}
-
-.divisor {
-    flex-basis: 2px;
+.box-image img {
+    width: 100%;
     height: 100%;
-    line-height: 300px;
-    background: var(--ter1);
+    object-fit: cover;
+    transition: 0.5s;
 }
 
-.ilustration {
-    flex-basis: 340px;
-    height: 450px;
-    position: relative;
-    
-    margin-right: 1px;
-    
+.box-image:hover {
+    flex-basis: 40%;
 }
 
-.ilustration img {
-    width: 300px;
-    z-index: 5;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+.active-img {
+    flex-basis: 40%;
 }
 
-.graph1 {
-    width: 200px;
-    height: 300px;
-    background: var(--pri2);
-    
-    z-index: 3;
-    position: absolute;
-    top: 10px;
-    left: 10px;
+.gallery:hover .active-img {
+    flex-basis: 0;
 }
 
-.graph2 {
-    width: 340px;
-    height: 430px;
-    background: var(--pri1);
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-@media screen and (max-width: 768px){
-   
-    
-    .content-section {
-        flex-basis: 100%;
-        text-align: center;
-    }
-
-    .ilustration {
-        flex-basis: 340px;
-        margin: 0 auto;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .divisor {
-        flex-basis: 80%;
-        height: 100%;
-        line-height: 2px;
-        background: var(--ter1);
-        margin: 30px auto;
-    }
+.box-image:nth-child(1):hover {
+    flex-basis: 40%;
 }

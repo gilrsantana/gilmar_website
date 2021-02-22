@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gilmar Santana</title>
 
-  <link rel="icon" href="./Images/favicon.png" type="image/gif" sizes="16x16">
+  <link rel="icon" href="./Assets/Img/favicon.png" type="image/gif" sizes="16x16">
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -35,17 +35,17 @@
 </head>
 
 <body>
-  <header class="banner">
+  <header class="banner" id="banner">
     
     <nav class="principal-nav">
-      <img class="banner-logo" src="/Images/logo_transparent_5.png" alt="Gilmar Santana Logo">
+      <img class="banner-logo" src="./Assets/Img/logo_transparent_5.png" alt="Gilmar Santana Logo">
 
       <ul class="principal-nav-list" id="principal-nav-list">
         <li class="principal-nav-item">
-          <a class="link-principal-nav" href="">Home</a>
+          <a class="link-principal-nav" href="#banner">Home</a>
         </li>
         <li class="principal-nav-item">
-          <a class="link-principal-nav" href="#services">Serviços</a>
+          <a class="link-principal-nav" href="#portfolio">Portfólio</a>
         </li>
         <li class="principal-nav-item">
           <a class="link-principal-nav" href="">Sobre</a>
@@ -60,12 +60,12 @@
     </nav>
 
     <div class="menuBtn" id="menuBtn">
-      <img src="./Images/menu.png" alt="menu-png" id="menu" />
+      <img src="./Assets/Img/menu.png" alt="menu-png" id="menu" />
     </div>
 
     <div class="video-banner">
       <video class="video-bg" autoplay loop muted>
-        <source src="./Assets/Surf.mp4" type="video/mp4">
+        <source src="./Assets/Video/Surf.mp4" type="video/mp4">
       </video>
     </div>
 
@@ -93,38 +93,37 @@
     
   <main>
     
-    <section class="services" id="services">
+    <section class="portfolio" id="portfolio">
       <div class="container">
-        <div class="box">
+        <h1>Portfólio</h1>
+        <div class="gallery">
           
-          <div class="content-section">
-            <h1 class="title-section">
-              Serviços
-            </h1>
-            <p class="text-content">
-              Nossa missão é fazer da internet e das mídias digitais um lugar lucrativo para seu negócio. 
-            </p>
-            <button class="button btn-pri" type="button">Quero surfar essa onda</button>
-          </div> <!-- content-section -->
-          
-          <div class="divisor"><br></div>
-          
-
-          <div class="ilustration">
-            <div class="graph1"></div>
-            <div class="graph2"></div>
-            <img src="./Assets/surfer-section.jpg" alt="">
+          <div class="box-image active-img">
+            <a href="https://barbershop-new.netlify.app/" target="_blank"><img src="./Assets/Img/Barber-shop.png" alt=""></a>
           </div>
-          
-
-        </div> <!-- /box -->
-        
-        
-        
-        
-      </div>
-      
-
+          <div class="box-image">
+            <a href="https://devcar.netlify.app/" target="_blank"><img src="./Assets/Img/Devcar.png" alt=""></a>
+          </div>
+          <div class="box-image">
+            <a href="https://spotify-alternative.netlify.app/" target="_blank"><img src="./Assets/Img/Spotify.png" alt=""></a>
+          </div>
+          <div class="box-image">
+            <a href="https://finans-money.netlify.app/" target="_blank"><img src="./Assets/Img/Finans.png" alt=""></a>
+          </div>
+          <div class="box-image">
+            <a href="https://museu-nacional.netlify.app/" target="_blank"><img src="./Assets/Img/Museu-Nacional.png" alt=""></a>
+          </div>
+          <div class="box-image">
+            <a href="https://chale-hotel.netlify.app/" target="_blank"><img src="./Assets/Img/Chale-hotel.png" alt=""></a>
+          </div>
+          <div class="box-image">
+            <a href="https://noticias-cidade.netlify.app/" target="_blank"><img src="./Assets/Img/Noticias-cidade.png" alt=""></a>
+          </div>
+          <div class="box-image">
+            <a href="https://soleserra.netlify.app/" target="_blank"><img src="./Assets/Img/Sol-e-serra.png" alt=""></a>
+          </div>
+        </div>
+      </div> <!-- /container -->
     </section>
 
 
@@ -145,10 +144,10 @@
         menuBtn.onclick = function () {
             if (principalNav.style.right == "-250px") {
               principalNav.style.right = "0";
-                menu.src = "./Images/close.png";
+                menu.src = "./Assets/Img/close.png";
             } else {
               principalNav.style.right = "-250px";
-                menu.src = "./Images/menu.png";
+                menu.src = "./Assets/Img/menu.png";
             }
         };
     </script>
